@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Light theme and dancing hover effect for the form container */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7fc; /* Light background */
+}
+
+/* Form container with frosted glass effect */
+.form-container {
+  position: relative;
+  background: rgba(255, 255, 255, 0.8); /* Light background with slight transparency */
+  backdrop-filter: blur(10px); /* Adding blur for a frosted glass effect */
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+/* Hover effect to make the form "dance" when the mouse hovers over it */
+.form-container:hover {
+  transform: translateY(-10px); /* Moves the form upwards */
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.15); /* Increases shadow when hovered */
+}
+
+/* Gradient background for the full page */
+.bg-gradient-to-r {
+  background-image: linear-gradient(to right, #6ee7b7, #a5f3fc); /* Pastel teal to cyan */
+}
+
+/* Toast notifications */
+.Toastify__toast--success {
+  background-color: #4caf50; /* Green for success */
+}
+
+.Toastify__toast--error {
+  background-color: #f44336; /* Red for errors */
+}
+
+/* Smooth focus effect for inputs */
+input:focus, button:focus {
+  outline: none;
+  border-color: #4ade80; /* Light green border on focus */
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: #38b2ac; /* Darker teal on hover */
+}
+
+/* Optional: Input placeholder styling */
+input::placeholder {
+  color: #e0e0e0; /* Light placeholder color */
+}
+
+/* Darker text for better contrast */
+h2 {
+  color: #2d3748; /* Dark text color */
+}
+
+input, button {
+  color: #2d3748; /* Dark text color for inputs and button */
+}
+
+input::placeholder {
+  color: #a0aec0; /* Lighter gray placeholder */
+}
